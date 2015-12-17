@@ -1,0 +1,87 @@
+/*
+--------------------------------------------
+ESTRUTURAÇÃO BASE (Palupa Framework v1)
+--------------------------------------------
+*** BODY
+**** TOPO
+**** RODAPÉ
+**** COPYRIGHT
+**** ESTILOS GERAIS PARA AS PÁGINAS
+**** ESTILOS GERAIS PARA AS PÁGINAS INTERNAS
+**** PÁGINA INICIAL
+**** PÁGINAS INTERNAS
+**** EXTRAS
+**** BOTÕES
+**** @MEDIA
+*/
+
+/* BODY */
+	body{
+
+
+	}
+
+	/* TOPO */
+		.topo{
+
+		}
+
+	/* RODAPÉ */
+		.rodape{
+
+		}
+
+	/* COPYRIGHT */
+		.copyright{
+
+		}
+
+	/* PG */
+		.pg{
+
+		}
+			.pg .titulo{
+
+			}
+
+	/* PG INTERNAS*/
+		.pg-internas{
+
+		}
+
+	/* PG INICIAL*/
+		.pg-inicial{
+
+		}
+			.pg-inicial .area-noticias{
+
+			}
+				.pg-inicial .area-noticias p{
+
+				}
+
+	/* PG CONTATO*/
+		.pg-contato{
+
+		}
+
+	/* EXTRAS */
+		.correcao-x{
+			padding: 0 20px;
+		}
+		.correcao-y{
+			padding: 20px 0;
+		}
+		.correcao-xy{
+			padding: 20px;
+		}
+
+	/* BOTÕES */
+		.botao-exemplo{
+
+		}
+
+	/* @MEDIA */
+		@media (max-width: 1200px) {
+
+		}
