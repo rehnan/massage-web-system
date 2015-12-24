@@ -21,10 +21,178 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 
 	}
 
-	/* TOPO */
-		.topo{
-
+		/* TOPO */
+		.area-topo {
+		  
 		}
+
+			.area-topo .topo {
+				background: url(../img/bg2.jpg) no-repeat;
+				background-size: cover;			    
+			    height: 300px;
+			    background-position: 90% 70%;
+ 				background-repeat: no-repeat;
+    			
+			
+			}
+
+				.area-topo .topo::before {
+				
+				}
+				
+				.area-topo .topo .navbar{
+					background: linear-gradient(to bottom left, #555, transparent);
+					border: none;
+					height: 100%;
+				}
+
+					.area-topo .topo .navbar-header{
+						width:100%;
+						margin-top: 40px;	
+						
+					}						
+
+						.area-topo .topo .navbar-toggle{
+							background-color: rgba(255, 255, 255, 0.36);
+							margin-right: 10px;
+						}
+
+							.area-topo .topo .icon-bar{
+								    background-color: #fff;
+							}
+
+						.area-topo .topo .navbar-header h1 {
+							display: block;
+
+						    width: 270px;
+						    height: 190px;
+						    margin: 5px auto;
+						    padding: 0;
+
+						    text-indent: -9999em;
+						 	
+						    background: url(../img/logo.png) no-repeat;
+						    background-size: contain;
+						   
+
+						    /*position: relative;*/
+						}
+
+					.navbar-collapse.in{
+						
+					}
+
+					.area-topo .topo .navbar-nav {
+						margin-top: 30px;
+					 
+					}
+
+						.area-topo .topo .navbar-nav li {
+							display:inline-block;
+						    float: none;
+						    clear: both;						    
+						    position: relative;
+						    margin: 0 5px;
+						    list-style: none!important;
+						
+						}
+
+								.area-topo .topo .navbar-nav li:hover a{
+									
+									background-color: transparent;
+									border-color: transparent;
+
+								}
+
+							.area-topo .topo .navbar-nav li.link-ativo{
+								
+							}
+
+								.area-topo .topo .navbar-nav li.open a{
+									text-decoration: underline;
+									background-color: transparent;
+									border-color: transparent;							 
+								}
+
+								.area-topo .topo .navbar-nav li a {
+									padding: 10px 5px;
+									text-decoration: none;
+								    color: #fff;
+	    							font-size: 19px;
+	    							font-weight: 300;
+
+								}
+									.area-topo .topo .navbar-nav li a::after{
+
+										-webkit-transition: height .3s, opacity .3s, -webkit-transform .3s;
+										-moz-transition: height .3s, opacity .3s, -moz-transform .3s;
+										transition: height .3s, opacity .3s, transform .3s;
+										-webkit-transform: translateY(-10px);
+										-moz-transform: translateY(-10px);
+										transform: translateY(-10px);
+
+										opacity: 0;
+										background: #fff;
+										content: '';
+										background-color: #FFF;
+										height: 2px;
+										width: 100%;
+										position: absolute;
+										top: 40px;
+										left: 0;
+
+									}
+										.area-topo .topo .navbar-nav li a:hover::after{
+											height: 3px;
+
+											-webkit-transform: translateY(0px);
+											-moz-transform: translateY(0px);
+											transform: translateY(0px);
+
+											opacity: 1;
+										}
+
+								.area-topo .topo .navbar-nav li.link-ativo a {
+									text-decoration: underline;
+								}
+
+									.area-topo .topo .navbar-nav li a:hover {
+									 
+									}
+
+									.nav > li > a:hover,
+									.nav > li > a:focus {
+									  
+									}
+
+									.area-topo .topo .navbar-nav li a .fa {
+									  
+									}
+
+								.navbar-nav > li > .dropdown-menu {
+									background-color: rgba(0,0,0,0.2);
+							
+								}
+
+									.navbar-nav .open .dropdown-menu > li {
+										margin:0;										
+										border-bottom: 1px solid #fff;
+										width: 100%;										
+									}
+
+										.navbar-nav .open .dropdown-menu > li > a {
+											text-decoration: none!important;
+											border-bottom: 1px solid #fff;
+											font-size: 15px;
+
+										}
+
+											.navbar-nav .open .dropdown-menu > li > a:hover{
+												background-color: white;
+												color: #c52f33;
+												text-shadow: 1px 6px 9px rgba(150, 150, 150, 1);
+												font-weight: 400;
+											}
 
 	/* RODAPÉ */
 		.rodape{
@@ -84,4 +252,15 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 	/* @MEDIA */
 		@media (max-width: 1200px) {
 
+		}
+		/* @MEDIA */
+		@media (max-width: 775px) {
+			.area-topo .topo .navbar-nav {
+			    margin-top: 30px;
+			    background-color: #949191;
+			}
+
+			.area-topo .topo .navbar-nav li{
+				display: block;
+			}
 		}
