@@ -21,183 +21,307 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 
 	}
 
-		/* TOPO */
+	/* TOPO */
 		.area-topo {
-		  
+
 		}
 
-			.area-topo .topo {
-				background: url(../img/bg2.jpg) no-repeat;
-				background-size: cover;			    
-			    height: 300px;
-			    background-position: 90% 70%;
- 				background-repeat: no-repeat;
-    			
-			
-			}
+		.area-topo .topo {
+		background: url(../img/bg2.jpg) no-repeat;
+		background-size: cover;			    
+		height: 420px;
+		background-position: 90% 70%;
+		background-repeat: no-repeat;
 
-				.area-topo .topo::before {
-				
-				}
-				
-				.area-topo .topo .navbar{
-					background: linear-gradient(to bottom left, #555, transparent);
-					border: none;
-					height: 100%;
-				}
 
-					.area-topo .topo .navbar-header{
-						width:100%;
-						margin-top: 40px;	
-						
-					}						
 
-						.area-topo .topo .navbar-toggle{
-							background-color: rgba(255, 255, 255, 0.36);
-							margin-right: 10px;
-						}
+		}
 
-							.area-topo .topo .icon-bar{
-								    background-color: #fff;
-							}
+		.area-topo .topo::before {
 
-						.area-topo .topo .navbar-header h1 {
-							display: block;
+		}
 
-						    width: 270px;
-						    height: 190px;
-						    margin: 5px auto;
-						    padding: 0;
+		.area-topo .topo .navbar{
+		background: linear-gradient(to bottom left, #555, transparent);
+		border: none;
+		height: 100%;
+		}
 
-						    text-indent: -9999em;
-						 	
-						    background: url(../img/logo.png) no-repeat;
-						    background-size: contain;
-						   
+		.area-topo .topo .navbar-header{
+		width:100%;
+		margin-top: 40px;	
 
-						    /*position: relative;*/
-						}
+		}						
 
-					.navbar-collapse.in{
-						
-					}
+		.area-topo .topo .navbar-toggle{
+		background-color: rgba(255, 255, 255, 0.36);
+		margin-right: 10px;
+		}
 
-					.area-topo .topo .navbar-nav {
-						margin-top: 30px;
-					 
-					}
+		.area-topo .topo .icon-bar{
+		background-color: #fff;
+		}
 
-						.area-topo .topo .navbar-nav li {
-							display:inline-block;
-						    float: none;
-						    clear: both;						    
-						    position: relative;
-						    margin: 0 5px;
-						    list-style: none!important;
-						
-						}
+		.area-topo .topo .navbar-header h1 {
+		display: block;
 
-								.area-topo .topo .navbar-nav li:hover a{
-									
-									background-color: transparent;
-									border-color: transparent;
+		width: 270px;
+		height: 190px;
+		margin: 5px auto;
+		padding: 0;
 
-								}
+		text-indent: -9999em;
 
-							.area-topo .topo .navbar-nav li.link-ativo{
-								
-							}
+		background: url(../img/logo.png) no-repeat;
+		background-size: contain;
 
-								.area-topo .topo .navbar-nav li.open a{
-									text-decoration: underline;
-									background-color: transparent;
-									border-color: transparent;							 
-								}
 
-								.area-topo .topo .navbar-nav li a {
-									padding: 10px 5px;
-									text-decoration: none;
-								    color: #fff;
-	    							font-size: 19px;
-	    							font-weight: 300;
+		/*position: relative;*/
+		}
 
-								}
-									.area-topo .topo .navbar-nav li a::after{
+		.navbar-collapse.in{
 
-										-webkit-transition: height .3s, opacity .3s, -webkit-transform .3s;
-										-moz-transition: height .3s, opacity .3s, -moz-transform .3s;
-										transition: height .3s, opacity .3s, transform .3s;
-										-webkit-transform: translateY(-10px);
-										-moz-transform: translateY(-10px);
-										transform: translateY(-10px);
+		}
 
-										opacity: 0;
-										background: #fff;
-										content: '';
-										background-color: #FFF;
-										height: 2px;
-										width: 100%;
-										position: absolute;
-										top: 40px;
-										left: 0;
+		.area-topo .topo .navbar-nav {
+		margin-top: 30px;
 
-									}
-										.area-topo .topo .navbar-nav li a:hover::after{
-											height: 3px;
+		}
 
-											-webkit-transform: translateY(0px);
-											-moz-transform: translateY(0px);
-											transform: translateY(0px);
+		.area-topo .topo .navbar-nav li {
+		display:inline-block;
+		float: none;
+		clear: both;						    
+		position: relative;
+		margin: 0 5px;
+		list-style: none!important;
 
-											opacity: 1;
-										}
+		}
 
-								.area-topo .topo .navbar-nav li.link-ativo a {
-									text-decoration: underline;
-								}
+		.area-topo .topo .navbar-nav li:hover a{
 
-									.area-topo .topo .navbar-nav li a:hover {
-									 
-									}
+		background-color: transparent;
+		border-color: transparent;
 
-									.nav > li > a:hover,
-									.nav > li > a:focus {
-									  
-									}
+		}
 
-									.area-topo .topo .navbar-nav li a .fa {
-									  
-									}
+		.area-topo .topo .navbar-nav li.link-ativo{
 
-								.navbar-nav > li > .dropdown-menu {
-									background-color: rgba(0,0,0,0.2);
-							
-								}
+		}
 
-									.navbar-nav .open .dropdown-menu > li {
-										margin:0;										
-										border-bottom: 1px solid #fff;
-										width: 100%;										
-									}
+		.area-topo .topo .navbar-nav li.open a{
 
-										.navbar-nav .open .dropdown-menu > li > a {
-											text-decoration: none!important;
-											border-bottom: 1px solid #fff;
-											font-size: 15px;
+		background-color: transparent;
+		border-color: transparent;							 
+		}
 
-										}
+		.area-topo .topo .navbar-nav li a {
+		padding: 10px 5px;
+		text-decoration: none;
+		color: #fff;
+		font-size: 19px;
+		font-weight: 300;
 
-											.navbar-nav .open .dropdown-menu > li > a:hover{
-												background-color: white;
-												color: #c52f33;
-												text-shadow: 1px 6px 9px rgba(150, 150, 150, 1);
-												font-weight: 400;
-											}
+		}
+		.area-topo .topo .navbar-nav li a::after{
+
+		-webkit-transition: height .3s, opacity .3s, -webkit-transform .3s;
+		-moz-transition: height .3s, opacity .3s, -moz-transform .3s;
+		transition: height .3s, opacity .3s, transform .3s;
+		-webkit-transform: translateY(-10px);
+		-moz-transform: translateY(-10px);
+		transform: translateY(-10px);
+
+		opacity: 0;
+		background: #fff;
+		content: '';
+		background-color: #FFF;
+		height: 2px;
+		width: 100%;
+		position: absolute;
+		top: 40px;
+		left: 0;
+
+		}
+		.area-topo .topo .navbar-nav li a:hover::after{
+		height: 3px;
+
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		transform: translateY(0px);
+
+		opacity: 1;
+		}
+
+		.area-topo .topo .navbar-nav li.link-ativo a {
+
+		}
+
+		.area-topo .topo .navbar-nav li a:hover {
+
+		}
+
+		.nav > li > a:hover,
+		.nav > li > a:focus {
+
+		}
+
+		.area-topo .topo .navbar-nav li a .fa {
+
+		}
+
+		.navbar-nav > li > .dropdown-menu {
+		background-color: rgba(0,0,0,0.2);
+
+		}
+
+		.navbar-nav .open .dropdown-menu > li {
+		margin:0;										
+		border-bottom: 1px solid #fff;
+		width: 100%;										
+		}
+
+		.navbar-nav .open .dropdown-menu > li > a {
+		text-decoration: none!important;
+		border-bottom: 1px solid #fff;
+		font-size: 15px;
+
+		}
+
+		.navbar-nav .open .dropdown-menu > li > a:hover{
+		background-color: white;
+		color: #c52f33;
+		text-shadow: 1px 6px 9px rgba(150, 150, 150, 1);
+		font-weight: 400;
+		}
+		.area-topo .topo .frase{
+		text-align: center;
+		margin-top: 20px;
+
+		}
+		.area-topo .topo .frase span{
+		color: white;
+		font-size: 20px;
+		font-family: Poiret One;
+		font-weight: 400;
+		}
 
 	/* RODAPÉ */
 		.rodape{
+			margin-top: 500px;
+			/*background: #272727;*/
+			background-image: url(../img/bg-footer.jpg);
+			background-size: cover;			    
+		    height: ;
+		    background-position: 90% 70%;
+			background-repeat: no-repeat;
 
 		}
+		
+		.rodape .titulo-footer{
+			color: #fff;
+			font-size: 23px;
+			text-align: center;
+			font-weight: 300;
+			border-bottom:solid 1px #fff;
+			width: 300px;
+			margin:auto;
+			margin-top: 20px;
+			margin-bottom: 20px;
+
+		}
+			.rodape .titulo-footer p{
+				font-family: 'Open Sans', sans-serif;
+			}
+				.rodape .titulo-footer span{
+					font-weight: bold
+				}
+					.rodape .titulo-footer i{
+
+					}
+		.rodape .contato {
+			margin: auto;
+			padding: 20px;
+		}
+			.rodape .contato span{
+				color:  #777;
+				display: inline-block;
+				margin-top: 7px;
+				font-size: 17px;
+			}
+				.rodape .contato i{
+					margin: 5px;
+					font-size: 23px;
+					color: #fff;
+				}
+		.rodape .redes-sociais{
+			margin: auto;
+			text-align: center;
+			margin-top: 50px;
+		}
+			.rodape .redes-sociais span{
+				
+			}
+				.rodape .redes-sociais a{
+					text-decoration: none;
+					color: #9C9C9C;
+					font-size: 40px;
+					margin:20px;
+
+
+				}
+					.rodape .redes-sociais a:hover{
+						
+						color: #fff;
+					}
+		.rodape .novidades{
+			margin: auto;
+			max-width: 300px;
+			margin-bottom: 30px;
+			padding: 5px;
+		}
+			
+			.rodape .novidades input{
+		
+			}
+				.rodape .novidades button{
+					width: 100%;
+					font-size: 20px;
+					color: #9C9C9C;
+					border:solid 1px transparent;
+				}
+					.rodape .novidades button:hover{
+						background: #A2A2A2;
+						font-size: 20px;
+						color: #fff;
+						border:solid 1px #fff;
+					}
+				
+
+
+
+			/* COPYRIGHT */
+				 .termos {
+				    font-size: 14px;
+
+				    padding: 25px;
+
+				    text-align: center;
+
+				    color: #fff;
+				    border-top: solid 1px #fff;
+				    background-color: #272727;;
+				}
+
+				.termos small{
+					color: #7B7B7B;;
+				}
+
+				.termos span{
+					color:red ;
+				}
+	
+
 
 	/* COPYRIGHT */
 		.copyright{
@@ -254,7 +378,7 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 
 		}
 		/* @MEDIA */
-		@media (max-width: 775px) {
+		@media (max-width: 767px) {
 			.area-topo .topo .navbar-nav {
 			    margin-top: 30px;
 			    background-color: #949191;
@@ -262,5 +386,8 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 
 			.area-topo .topo .navbar-nav li{
 				display: block;
+			}
+			.area-topo .topo{
+				height: auto;
 			}
 		}
