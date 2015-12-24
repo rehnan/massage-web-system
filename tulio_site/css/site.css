@@ -345,12 +345,47 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 		.pg-inicial{
 
 		}
-			.pg-inicial .area-noticias{
+			.pg-inicial .posts{
 
 			}
-				.pg-inicial .area-noticias p{
-
+				.pg-inicial .posts .correcao{
+					padding: 20px;
 				}
+					.pg-inicial .posts a{
+						text-align: center;
+						text-decoration: none;
+					}
+						.pg-inicial .posts .img-ilustrativa{
+								background-image: url(../img/msg-modeladora.jpg);
+								background-size: cover;			    
+							    height:200px; 
+							    background-position: 90% 70%;
+								background-repeat: no-repeat;
+								width: 100%;
+								max-width: 100%;
+						}
+							.pg-inicial .posts .img-ilustrativa .lente{
+								height: 200px;
+								width: 100%;
+								background-color:  rgba(0, 0, 0, 0.54);
+
+							}
+								.pg-inicial .posts a:hover .lente{
+									height: 200px;
+									width: 100%;
+									background-color:  transparent;
+
+								}
+							.pg-inicial .posts .descricao{
+
+							}
+								.pg-inicial .posts .descricao h2{
+
+								}
+									.pg-inicial .posts .descricao p{
+
+									}
+			
 
 	/* PG CONTATO*/
 		.pg-contato{
