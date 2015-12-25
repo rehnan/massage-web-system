@@ -332,8 +332,10 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 		.pg{
 
 		}
-			.pg .titulo{
-
+			.pg .titulo-post{
+				font-size: 30px;
+				margin: 20px;
+				font-family: 'Open Sans', sans-serif;
 			}
 
 	/* PG INTERNAS*/
@@ -380,10 +382,11 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 
 							}
 								.pg-inicial .posts .descricao h2{
-
+									font-size: 20px;
+									color: #484848;
 								}
 									.pg-inicial .posts .descricao p{
-
+										color: #767676;
 									}
 			
 
