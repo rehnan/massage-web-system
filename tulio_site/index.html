@@ -25,11 +25,13 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
 	<link rel="stylesheet" href="css/site.css" />
 
 	<!-- JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/geral.js"></script>
 
 	<!-- FAVICON -->
@@ -39,10 +41,57 @@
 <body>
 	
 	<!-- TOPO -->
-	<div class="area-topo">
+	<header class="topo">
+
+		<div id="owl-demo">
+      
+				<div class="item" style="background: url(img/bg2.jpg) no-repeat;">
+					<div class="row">
+					<div class="col-md-12">
+						<div class="frase">
+
+								<span><i>Para o seu bem estar físico e mental</i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item" style="background: url(img/a.jpg) no-repeat;">
+					<div class="row">
+					<div class="col-md-12">
+						<div class="frase">
+								<span><i>Lorem Ipsum adalah text contoh digunakan didalam industr</i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item" style="background: url(img/c.jpg) no-repeat;">
+					<div class="row">
+					<div class="col-md-12">
+						<div class="frase">
+								<span><i>Para o seu bem estar físico e mental</i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item" style="background: url(img/as.jpg) no-repeat;">
+					<div class="row">
+					<div class="col-md-12">
+						<div class="frase">
+								<span><i>Para o seu bem estar físico e mental</i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+		</div>
+
 		
-		<header class="topo">
-			
+	
+
+		<header class="area-topo">
+
 			<div class="navbar" role="navigation">
 
 				<div class="container">
@@ -123,20 +172,13 @@
 
 				</div>
 
-				<div class="row">
-					<div class="col-md-12">
-						<div class="frase">
-								<span><i>Para o seu bem estar físico e mental</i></span>
-							</div>
-					</div>
-				</div>
+				
 
 			</div>
-
+		
 		</header>
 	
-	</div>
-	
+	</header>
 
 	<!-- CONTEÚDO DO SITE -->
 	<div class="pg pg-inicial" style="display: ;">
@@ -146,14 +188,18 @@
 		<section class="row quem-somos ">
 			<div class="col-md-6">
 				<div class="titulo-post">
-					<span style="margin: auto;">
-						Quem somos 
-					</span>
-					<p style="font-size:17px;">Dores no corpo, cansaço muscular ou estresse podem ser eliminados com uma ou em alguns casos particulares algumas sessões que variam entre uma hora e uma hora e vinte minutos. O atendimento inicia no couro cabeludo e vai até o pé, em ambos os lados do corpo, deixando assim o paciente com a postura alinhada, articulações soltas e a musculatura relaxada.</p>
+					<span>Quem <strong>somos </strong></span>
+					<p>Dores no corpo, cansaço muscular ou estresse podem ser eliminados com uma ou em alguns casos particulares algumas sessões que variam entre uma hora e uma hora e vinte minutos. O atendimento inicia no couro cabeludo e vai até o pé, em ambos os lados do corpo, deixando assim o paciente com a postura alinhada, articulações soltas e a musculatura relaxada.</p>
 				</div>				
 
 			</div>
-			<div class="col-md-6"></div>
+			<div class="col-md-6">
+				<div class="titulo-post">
+					<h2>Massoterapia</h2>
+					<p>A massoterapia tem desempenhado um papel importante nos cuidados gerais de saúde para muita gente, principalmente no mundo estressante como é aquele em que vivemos hoje. A massoterapia, como o nome sugere, consiste no tratamento ou terapia através de massagens e pode ser aplicada a diferentes partes do corpo ou de forma contínua em todo o corpo, para aliviar o stress e a tensão, diminuir as dores musculares, controlar a dor, eliminar .</p>
+				</div>			
+
+			</div>
 			
 		</section>
 
@@ -294,6 +340,36 @@
 		
 	</footer>
 	
-	<div class="termos"><small>© Copyright 2015</small> Túlio Tobias - Todos os direitos reservados.</div>
+	<div class="termos">
+
+		<p>© Copyright 2015</small> Túlio Tobias - Todos os direitos reservados.</p><small>
+
+	</div>
+
+	<script>
+
+
+    $(document).ready(function() {
+     
+      $("#owl-demo").owlCarousel({
+     
+		items : 1,
+		dots: false,
+		loop: true,
+		lazyLoad: true,
+		mouseDrag: false,
+		autoplay:true,
+		autoplayTimeout:10000,
+		autoplayHoverPause:true,
+		animateOut: 'fadeOut',
+		smartSpeed: 450,
+		autoplaySpeed: 5000
+     
+      });
+     
+    });
+
+
+	</script>
 </body>
 </html>

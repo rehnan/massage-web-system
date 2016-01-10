@@ -22,47 +22,74 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 	}
 
 	/* TOPO */
-		.area-topo {
-
+		.topo {
+			position:relative;
+			
+		}
+		.topo .area-topo {
+			position: absolute;
+			width: 100%;
+			top: 0px;
+			z-index: 9999;
 		}
 
-		.area-topo .topo {
-		background: url(../img/bg2.jpg) no-repeat;
-		background-size: cover;			    
+		 .topo .item {
+		z-index: 0; 
+		background-size: cover !important;			    
 		height: 420px;
-		background-position: 90% 70%;
-		background-repeat: no-repeat;
+		background-position: 90% 70% !important;
+		background-repeat: no-repeat !important;
 
 
 
 		}
+		.topo .item .frase{
+		text-align: center;
+		margin-top: 280px;
+		
 
-		.area-topo .topo::before {
+		}
+		 .topo .item .frase span{
+		color: #fff;
+		font-size: 30px;
+		font-family: Poiret One;
+		font-weight: 400;
+
+-webkit-filter: brightness(1.2);
+   -moz-filter: brightness(1.2);
+    -ms-filter: brightness(1.2);
+     -o-filter: brightness(1.2);
+filter: brightness(0.2);
+
+		
+		}
+
+		 .topo::before {
 
 		}
 
-		.area-topo .topo .navbar{
-		background: linear-gradient(to bottom left, #555, transparent);
-		border: none;
-		height: 100%;
+		 .topo .area-topo .navbar{
+			background: rgba(106, 162, 183, .35);
+			border: none;
+			height: 420px;
 		}
 
-		.area-topo .topo .navbar-header{
+		 .topo .area-topo .navbar-header{
 		width:100%;
 		margin-top: 40px;	
 
 		}						
 
-		.area-topo .topo .navbar-toggle{
+		 .topo .area-topo .navbar-toggle{
 		background-color: rgba(255, 255, 255, 0.36);
 		margin-right: 10px;
 		}
 
-		.area-topo .topo .icon-bar{
+		 .topo .area-topo .icon-bar{
 		background-color: #fff;
 		}
 
-		.area-topo .topo .navbar-header h1 {
+		 .topo .area-topo .navbar-header h1 {
 		display: block;
 
 		width: 270px;
@@ -83,12 +110,12 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 
 		}
 
-		.area-topo .topo .navbar-nav {
+		 .topo .area-topo .navbar-nav {
 		margin-top: 30px;
 
 		}
 
-		.area-topo .topo .navbar-nav li {
+		 .topo .area-topo .navbar-nav li {
 		display:inline-block;
 		float: none;
 		clear: both;						    
@@ -98,24 +125,24 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 
 		}
 
-		.area-topo .topo .navbar-nav li:hover a{
+		 .topo .area-topo .navbar-nav li:hover a{
 
 		background-color: transparent;
 		border-color: transparent;
 
 		}
 
-		.area-topo .topo .navbar-nav li.link-ativo{
+		 .topo .area-topo .navbar-nav li.link-ativo{
 
 		}
 
-		.area-topo .topo .navbar-nav li.open a{
+		 .topo .area-topo .navbar-nav li.open a{
 
 		background-color: transparent;
 		border-color: transparent;							 
 		}
 
-		.area-topo .topo .navbar-nav li a {
+		 .topo .area-topo .navbar-nav li a {
 		padding: 10px 5px;
 		text-decoration: none;
 		color: #fff;
@@ -123,7 +150,7 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 		font-weight: 300;
 
 		}
-		.area-topo .topo .navbar-nav li a::after{
+		 .topo .area-topo .navbar-nav li a::after{
 
 		-webkit-transition: height .3s, opacity .3s, -webkit-transform .3s;
 		-moz-transition: height .3s, opacity .3s, -moz-transform .3s;
@@ -143,7 +170,7 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 		left: 0;
 
 		}
-		.area-topo .topo .navbar-nav li a:hover::after{
+		 .topo .area-topo .navbar-nav li a:hover::after{
 		height: 3px;
 
 		-webkit-transform: translateY(0px);
@@ -153,11 +180,11 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 		opacity: 1;
 		}
 
-		.area-topo .topo .navbar-nav li.link-ativo a {
+		 .topo .area-topo .navbar-nav li.link-ativo a {
 
 		}
 
-		.area-topo .topo .navbar-nav li a:hover {
+		 .topo .area-topo .navbar-nav li a:hover {
 
 		}
 
@@ -166,7 +193,7 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 
 		}
 
-		.area-topo .topo .navbar-nav li a .fa {
+		 .topo .area-topo .navbar-nav li a .fa {
 
 		}
 
@@ -194,17 +221,7 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 		text-shadow: 1px 6px 9px rgba(150, 150, 150, 1);
 		font-weight: 400;
 		}
-		.area-topo .topo .frase{
-		text-align: center;
-		margin-top: 20px;
-
-		}
-		.area-topo .topo .frase span{
-		color: white;
-		font-size: 20px;
-		font-family: Poiret One;
-		font-weight: 400;
-		}
+		 
 
 	/* RODAPÉ */
 		.rodape{
@@ -336,7 +353,11 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 				font-size: 30px;
 				margin: 20px;
 				font-family: 'Open Sans', sans-serif;
+				text-align: center;
 			}
+				
+
+
 
 	/* PG INTERNAS*/
 		.pg-internas{
@@ -347,8 +368,10 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 		.pg-inicial{
 
 		}
-			.pg-inicial .posts{
-
+			.pg .titulo-post p{
+				font-size: 17px;
+				text-align: left;
+				padding: 30px;
 			}
 				.pg-inicial .posts .correcao{
 					padding: 20px;
@@ -417,15 +440,15 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 		}
 		/* @MEDIA */
 		@media (max-width: 767px) {
-			.area-topo .topo .navbar-nav {
+			 .topo .area-topo .navbar-nav {
 			    margin-top: 30px;
 			    background-color: #949191;
 			}
 
-			.area-topo .topo .navbar-nav li{
+			 .topo .area-topo .navbar-nav li{
 				display: block;
 			}
-			.area-topo .topo{
+			 .topo .area-topo{
 				height: auto;
 			}
 		}
