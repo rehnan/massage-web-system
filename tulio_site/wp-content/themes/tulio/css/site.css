@@ -99,7 +99,7 @@ filter: brightness(0.2);
 
 		text-indent: -9999em;
 
-		background: url(img/logo.png) no-repeat;
+		background: url(../img/logo.png) no-repeat;
 		background-size: contain;
 
 
@@ -227,7 +227,7 @@ filter: brightness(0.2);
 		.rodape{
 			margin-top: 500px;
 			/*background: #272727;*/
-			background-image: url(img/bg-footer.jpg);
+			background-image: url(../img/bg-footer.jpg);
 			background-size: cover;			    
 		    height: ;
 		    background-position: 90% 70%;
@@ -381,7 +381,7 @@ filter: brightness(0.2);
 						text-decoration: none;
 					}
 						.pg-inicial .posts .img-ilustrativa{
-								background-image: url(img/msg-modeladora.jpg);
+								background-image: url(../img/msg-modeladora.jpg);
 								background-size: cover;			    
 							    height:200px; 
 							    background-position: 90% 70%;
