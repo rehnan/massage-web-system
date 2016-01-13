@@ -114,12 +114,26 @@ add_action( 'widgets_init', 'tulio_widgets_init' );
  * Enqueue scripts and styles.
  */
 function tulio_scripts() {
-	wp_enqueue_style( 'tulio-style', get_stylesheet_uri() );
+	//FONT GOOGLE 
+	wp_enqueue_style( 'stetica-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic');
 
-	wp_enqueue_script( 'tulio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	//JAVA SCRIPT
+	wp_enqueue_script( 'stetica-jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js' );
+	wp_enqueue_script( 'stetica-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'stetica-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'stetica-bootsrap', get_template_directory_uri() . '/js/bootstrap.min.js' );
+	wp_enqueue_script( 'stetica-font-owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js' );
+	wp_enqueue_script( 'stetica-jquery-facybox', get_template_directory_uri() . '/js/jquery.fancybox.pack.js' );
+	wp_enqueue_script( 'stetica-geral', get_template_directory_uri() . '/js/geral.js' );
+	wp_enqueue_script( 'stetica-word-split', get_template_directory_uri() . '/js/jquery.lettering.js' );	
 
-	wp_enqueue_script( 'tulio-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
-
+	//CSS
+	wp_enqueue_style( 'stetica-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
+	wp_enqueue_style( 'stetica-font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css');
+	wp_enqueue_style( 'stetica-font-animate', get_template_directory_uri() . '/css/animate.css');
+	wp_enqueue_style( 'stetica-font-owl-carousel', get_template_directory_uri() . '/css/owl.carousel.css');
+	wp_enqueue_style( 'stetica-jquery-fancybox', get_template_directory_uri() . '/css/jquery.fancybox.css');
+	wp_enqueue_style( 'stetica-style', get_stylesheet_uri() );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
